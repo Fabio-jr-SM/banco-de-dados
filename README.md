@@ -31,6 +31,21 @@ UPDATE tabela SET coluna = novo_valor WHERE condição;
 ```
 
 **DELETE:** Remove registros de uma tabela
+Exemplo:
 ```sql
 DELETE FROM tabela WHERE condição;
 ```
+
+**ALTER TABLE:** Modifica uma tabela existente (adiciona, remove ou modifica colunas).
+Exemplo:
+```sql
+ALTER TABLE nome_da_tabela ADD coluna tipo_de_dado;
+```
+
+**WHERE:** Utilizado para impor condições em consultas para filtrar os resultados.
+Exemplo:
+```sql
+SELECT * FROM tabela WHERE coluna = valor;
+```
+
+
