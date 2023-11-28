@@ -33,3 +33,5 @@ select turma, count(turma) from avaliacoes GROUP by turma;
 
 --Média geral de cada bimestre e cada turma
 SELECT turma ,bimestre, avg(nota) from avaliacoes Group by turma, bimestre;
+
+SELECT count(*) from(SELECT id_aluno from avaliacoes GROUP by id_aluno);
