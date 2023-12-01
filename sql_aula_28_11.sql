@@ -35,3 +35,10 @@ select turma, count(turma) from avaliacoes GROUP by turma;
 SELECT turma ,bimestre, avg(nota) from avaliacoes Group by turma, bimestre;
 
 SELECT count(*) from(SELECT id_aluno from avaliacoes GROUP by id_aluno);
+
+
+SELECT id_aluno, nome, turma, avg(nota) from avaliacoes GROUP by id_aluno ;
+
+SELECT id_aluno, nome, turma, avg(nota) from avaliacoes GROUP by id_aluno HAVING avg(nota)>=6;
+
+SELECT id_aluno, nome, turma, avg(nota) from avaliacoes GROUP by id_aluno HAVING avg(nota)<=6;
